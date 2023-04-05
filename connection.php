@@ -2,10 +2,10 @@
 function OpenCon()
 {
   
-    $servername = "db5007312976.hosting-data.io";
-    $username = "dbu2733651";
-    $password = "Dental2022$";
-    $dbname = "dbs6025165";
+    $servername = "localhost";
+    $username = " ";// add your database username;
+    $password = " ";// add your database password;
+    $dbname = " ";// add your database name;
 
 
 $conn = new mysqli($servername, $username , $password,$dbname) or die("Connect failed: %s\n". $conn -> error);
@@ -15,4 +15,3 @@ function CloseCon($conn)
 {
 $conn -> close();
 }
-?>
